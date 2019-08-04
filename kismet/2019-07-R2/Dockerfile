@@ -123,8 +123,6 @@ RUN set -x \
 
 COPY --from=builder /usr/local/ /usr/local/
 
-RUN echo 'remote_capture_listen=0.0.0.0' > /usr/local/etc/kismet_site.conf
-
 EXPOSE 2501 3501
 
 COPY docker-entrypoint.sh /usr/local/bin/
