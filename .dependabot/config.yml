@@ -1,0 +1,10 @@
+version: 1
+
+update_configs:
+  - package_manager: "docker"
+    directory: "kismet/2019-07-R2/"
+    update_schedule: "daily"
+    commit_message:
+      prefix: "fix"
+      prefix_development: "chore"
+      include_scope: true
